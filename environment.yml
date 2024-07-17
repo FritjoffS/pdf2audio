@@ -1,0 +1,14 @@
+# conda env create -f environment.yml
+# conda activate pdf_to_speech
+# conda env update -f environment.yml --prune
+
+name: pdf_to_speech
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - PyPDF2==2.12.1
+    - gTTS==2.3.1
